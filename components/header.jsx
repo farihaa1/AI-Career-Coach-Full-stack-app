@@ -73,14 +73,23 @@ const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <UserButton />
+            <UserButton
+              appearance={{
+                elements: {
+                  avatarBox: "w-10 h-10",
+                  userButtonPopoverCard: "shadow-xl",
+                  userPreviewMainIdentifier: "font-semibold",
+                },
+              }}
+              afterSignOutUrl="/"
+            />
           </SignedIn>
           <SignedOut>
             <SignInButton>
               <Button>Sign In</Button>
             </SignInButton>
             <SignUpButton>
-            <Button>Sign Up</Button>
+              <Button>Sign Up</Button>
             </SignUpButton>
           </SignedOut>
         </div>
