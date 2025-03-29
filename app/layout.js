@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <header>
               <Header></Header>
             </header>
-            <main> {children}</main>
+            <main className=""> {children}</main>
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
                 <p>Made by Johra Khatun fariha</p>
